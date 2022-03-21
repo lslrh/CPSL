@@ -79,6 +79,9 @@ We expect models folder to be like
     --resume_path ./pretrained_models/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl \
     --rce --proto_consistW 5 --SL_lambda 0.1
     ```
+
+   </details>
+    
 - **Stage2.**
     * Generate soft pseudo label.
     ```bash
