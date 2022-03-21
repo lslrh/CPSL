@@ -36,7 +36,7 @@ We expect dataset folder to be like
 ## Models
 | backbone  | warmed-up models (41.4 mIoU) | Stage1 self-labeling (55.7 mIoU) |  Stage2 KD-1 (59.4 mIoU) | Stage3 KD-2 (60.8 mIoU) |
 |:----------:|:------:|:----:|:----:|:----:|
-| ResNet101 | [model](https://drive.google.com/file/d/1g6J1PpX1mYorNWGcj9mbnvpK8WNQMMDG/view?usp=sharing)  | [model](https://drive.google.com/file/d/1NMcdUUBzwdhosGdiIFJZUll_p9nQ-i5O/view?usp=sharing)| [log1](docs/stage1.log) | [model](https://drive.google.com/file/d/1OkKjlDRRzOYLWUETHLo55YMqKf0O8ySy/view?usp=sharing)| [log2](docs/stage2.log)| [model](https://drive.google.com/file/d/1ImTM4aBk0STMXCmJiQs1HWmEBKeL4xs4/view?usp=sharing)| [log3](docs/stage3.log) | 
+| ResNet101 | [model](https://drive.google.com/file/d/1g6J1PpX1mYorNWGcj9mbnvpK8WNQMMDG/view?usp=sharing)  | [model](https://drive.google.com/file/d/1NMcdUUBzwdhosGdiIFJZUll_p9nQ-i5O/view?usp=sharing) | [log1](docs/stage1.log) | [model](https://drive.google.com/file/d/1OkKjlDRRzOYLWUETHLo55YMqKf0O8ySy/view?usp=sharing) | [log2](docs/stage2.log)| [model](https://drive.google.com/file/d/1ImTM4aBk0STMXCmJiQs1HWmEBKeL4xs4/view?usp=sharing) | [log3](docs/stage3.log) | 
 
 We expect models folder to be like
 ```
