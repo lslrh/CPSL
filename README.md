@@ -136,3 +136,17 @@ We expect models folder to be like
 python test.py --bn_clr --student_init simclr --resume ./logs/gta2citylabv2_stage3/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl
 ```
 
+
+## Citation
+If you like our work and use the code or models for your research, please cite our work as follows.
+```
+@article{li2022class,
+    title={Class-Balanced Pixel-Level Self-Labeling for Domain Adaptive Semantic Segmentation (CVPR 2022, official Pytorch implementation},
+    author={Li, Ruihuang and Li, Shuai and He, Chenhang, Jia, Xu and Zhang, Lei},
+    journal={CVPR 2022},
+    year={2022}
+}
+```
+
+## Acknowledgments
+This code is heavily borrowed from [ProDA](https://github.com/microsoft/ProDA). 
