@@ -1,5 +1,7 @@
 # CPSL: Class-Balanced Pixel-Level Self-Labeling for Domain Adaptive Semantic Segmentation (CVPR 2022, official Pytorch implementation)
 
+![Teaser](docs/overview.png)
+
 ### [Paper](https://arxiv.org/abs/2203.09744)
 
 ## Abstract
@@ -10,3 +12,6 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+## Data Preparation 
+Download [Cityscapes](https://www.cityscapes-dataset.com/), [GTA5](https://download.visinf.tu-darmstadt.de/data/from_games/) and [SYNTHIA-RAND-CITYSCAPES](http://synthia-dataset.net/downloads/).
+
