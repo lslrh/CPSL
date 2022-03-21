@@ -61,7 +61,7 @@ We expect models folder to be like
         Stage1.
     </summary>
     
-- **Stage1.**   The log of Stage 1: ![logs](docs/stage1.log)
+- **Stage1.**   The log of Stage 1: [logs](docs/stage1.log)
     
     * Generate soft pseudo label.
     ```bash
@@ -93,7 +93,7 @@ We expect models folder to be like
         Stage2.
     </summary>
     
-- **Stage2.**  The log of Stage 2: ![logs](docs/stage2.log)
+- **Stage2.**  The log of Stage 2: [logs](docs/stage2.log)
     
     * Generate soft pseudo label.
     ```bash
@@ -114,7 +114,7 @@ We expect models folder to be like
         Stage3.
     </summary>
     
-- **Stage3.**   The log of Stage 3: ![logs](docs/stage3.log)
+- **Stage3.**   The log of Stage 3: [logs](docs/stage3.log)
 
     * Generate soft pseudo label.
     ```bash
