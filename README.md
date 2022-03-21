@@ -33,11 +33,24 @@ We expect dataset folder to be like
 
 ```
 
-## Pretrained Models
-| backbone  | warmed-up models (41.4 mIoU) | Stage1 self-labeling (55.5 mIoU) |  Stage2 KD-1 (59.4 mIoU) | Stage3 KD-2 (60.8 mIoU) |
+## Models
+| backbone  | warmed-up models (41.4 mIoU) | Stage1 self-labeling (55.7 mIoU) |  Stage2 KD-1 (59.4 mIoU) | Stage3 KD-2 (60.8 mIoU) |
 |:----------:|:------:|:----:|:----:|:----:|
-| ResNet101 | [model] | [model](https://drive.google.com/file/d/1NMcdUUBzwdhosGdiIFJZUll_p9nQ-i5O/view?usp=sharing) | [model](https://drive.google.com/file/d/1OkKjlDRRzOYLWUETHLo55YMqKf0O8ySy/view?usp=sharing) | [model](https://drive.google.com/file/d/1ImTM4aBk0STMXCmJiQs1HWmEBKeL4xs4/view?usp=sharing) | 
+| ResNet101 | [model](https://drive.google.com/file/d/1g6J1PpX1mYorNWGcj9mbnvpK8WNQMMDG/view?usp=sharing) | [model](https://drive.google.com/file/d/1NMcdUUBzwdhosGdiIFJZUll_p9nQ-i5O/view?usp=sharing) | [model](https://drive.google.com/file/d/1OkKjlDRRzOYLWUETHLo55YMqKf0O8ySy/view?usp=sharing) | [model](https://drive.google.com/file/d/1ImTM4aBk0STMXCmJiQs1HWmEBKeL4xs4/view?usp=sharing) | 
 
+We expect models folder to be like
+```
+├── pretrained_models
+|   └── from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl
+└── logs
+    ├── gta2citylabv2_stage1Denoise
+    |   └──from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl
+    ├── gta2citylabv2_stage2
+    │   └── from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl
+    └── gta2citylabv2_stage3
+        └── from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl
+
+```
 
 
 ## Traning
