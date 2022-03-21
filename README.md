@@ -51,7 +51,9 @@ We expect models folder to be like
         └── from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl
 
 ```
-
+  <summary>
+    <b>1) GTA5 -> Cityscapes</b>
+  </summary>
 ## Traning
 - **Stage1.**
     * Generate soft pseudo label.
