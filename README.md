@@ -33,6 +33,13 @@ We expect dataset folder to be like
 
 ```
 
+## Pretrained Models
+| backbone  | warmed-up models (41.4 mIoU) | Stage1 self-labeling (55.5 mIoU) |  Stage2 KD-1 (59.4 mIoU) | Stage3 KD-2 (60.8 mIoU) |
+|:----------:|:------:|:----:|:----:|:----:|
+| ResNet101 | [model] | [model](https://drive.google.com/file/d/1NMcdUUBzwdhosGdiIFJZUll_p9nQ-i5O/view?usp=sharing) | [model]() | 63.2<br>65.8 | 
+
+
+
 ## Traning
 
 
