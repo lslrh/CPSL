@@ -61,7 +61,7 @@ We expect models folder to be like
         Stage1.
     </summary>
     
-    - **Stage1.**
+- **Stage1.**
     
     *Generate soft pseudo label.
     ```bash
@@ -93,7 +93,7 @@ We expect models folder to be like
         Stage2.
     </summary>
     
-    - **Stage2.**
+- **Stage2.**
     
     * Generate soft pseudo label.
     ```bash
