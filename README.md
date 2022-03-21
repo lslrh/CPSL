@@ -141,7 +141,7 @@ python test.py --bn_clr --student_init simclr --resume ./logs/gta2citylabv2_stag
 If you like our work and use the code or models for your research, please cite our work as follows.
 ```
 @article{li2022class,
-    title={Class-Balanced Pixel-Level Self-Labeling for Domain Adaptive Semantic Segmentation (CVPR 2022, official Pytorch implementation},
+    title={Class-Balanced Pixel-Level Self-Labeling for Domain Adaptive Semantic Segmentation},
     author={Li, Ruihuang and Li, Shuai and He, Chenhang, Jia, Xu and Zhang, Lei},
     journal={CVPR 2022},
     year={2022}
