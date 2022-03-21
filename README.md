@@ -14,4 +14,20 @@ pip install -r requirements.txt
 ```
 ## Data Preparation 
 Download [Cityscapes](https://www.cityscapes-dataset.com/), [GTA5](https://download.visinf.tu-darmstadt.de/data/from_games/) and [SYNTHIA-RAND-CITYSCAPES](http://synthia-dataset.net/downloads/).
+We expect dataset folder to be like
+```
+└── dataset
+    ├── cityscapes
+    │   ├── annotations
+    │   ├── gtFine
+    │   └── leftImg8bit
+    ├── GTA5
+    │   ├── images
+    │   ├── labels
+    │   └── split.mat
+    ├── SYNTHIA
+    │   ├── GT
+    │   ├── RGB
+    └── └── meta.json
 
+```
