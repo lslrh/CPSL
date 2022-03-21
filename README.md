@@ -57,7 +57,9 @@ We expect models folder to be like
 
 
 <details>
-- **Stage1.**
+    <summary>
+        Stage1.
+    </summary>
     
     * Generate soft pseudo label.
     ```bash
@@ -85,7 +87,9 @@ We expect models folder to be like
    </details>
    
 <details>
-- **Stage2.**
+    <summary>
+        Stage2.
+    </summary>
     
     * Generate soft pseudo label.
     ```bash
@@ -102,7 +106,9 @@ We expect models folder to be like
 </details>
 
 <details>
-- **Stage3.**
+    <summary>
+        Stage3.
+    </summary>
     
     * Generate soft pseudo label.
     ```bash
