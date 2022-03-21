@@ -69,5 +69,41 @@ We expect models folder to be like
     python generate_class_distribution.py --name gta2citylabv2_warmup_soft --soft \
     --resume_path  ./pretrained_models/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl --no_droplast --class_balance
     ```
+    * Calculate class distribution.
+    ```train stage1
+    python train.py --name gta2citylabv2_stage1Denoise --used_save_pseudo --ema --proto_rectify\
+    --path_soft Pseudo/gta2citylabv2_warmup_soft \
+    --resume_path ./pretrained_models/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl \
+    --rce --proto_consistW 5 --SL_lambda 0.1
+    ```
+   - **Stage2.**
+    * Generate soft pseudo label.
+    ```bash
+    python generate_pseudo_label.py --name gta2citylabv2_stage1Denoise --flip \
+    --resume_path ./logs/gta2citylabv2_stage1Denoise/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl --no_droplast
+    ```   
+    * train stage2.
+    ```bash
+    python train.py --name gta2citylabv2_stage2 --stage stage2 --used_save_pseudo \
+    --path_LP Pseudo/gta2citylabv2_stage1Denoise \
+    --resume_path ./logs/gta2citylabv2_stage1Denoise/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl \
+    --S_pseudo 1 --threshold 0.95 --distillation 1 --finetune --lr 6e-4 --student_init simclr --bn_clr --no_resume
+    ```   
+   - **Stage2.**
+    * Generate soft pseudo label.
+    ```bash
+    python generate_pseudo_label.py --name gta2citylabv2_stage2 --flip \
+    --resume_path ./logs/gta2citylabv2_stage1Denoise/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl --no_droplast\
+    --bn_clr --student_init simclr
+    ```   
+    * train stage3.
+    ```bash
+    python train.py --name gta2citylabv2_stage3 --stage stage3 --used_save_pseudo \
+    --path_LP Pseudo/gta2citylabv2_stage2 \
+    --resume_path ./logs/gta2citylabv2_stage2/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl \
+    --S_pseudo 1 --threshold 0.95 --distillation 1 --finetune --lr 6e-4 --student_init simclr --bn_clr --ema_bn
+    ```  
+    
+    
     
 
