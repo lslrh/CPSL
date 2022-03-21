@@ -52,9 +52,8 @@ We expect models folder to be like
 
 ```
 
-
 ## Traning
-
-
+- **Stage1.**
+* Generate soft pseudo label.
 
 
