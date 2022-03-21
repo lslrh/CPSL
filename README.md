@@ -54,6 +54,7 @@ We expect models folder to be like
   <summary>
     <b>1) GTA5 -> Cityscapes</b>
   </summary>
+  
 ## Traning
 - **Stage1.**
     * Generate soft pseudo label.
