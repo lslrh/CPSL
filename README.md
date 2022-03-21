@@ -76,7 +76,7 @@ We expect models folder to be like
     --resume_path ./pretrained_models/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl \
     --rce --proto_consistW 5 --SL_lambda 0.1
     ```
-   - **Stage2.**
+- **Stage2.**
     * Generate soft pseudo label.
     ```bash
     python generate_pseudo_label.py --name gta2citylabv2_stage1Denoise --flip \
@@ -89,7 +89,7 @@ We expect models folder to be like
     --resume_path ./logs/gta2citylabv2_stage1Denoise/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl \
     --S_pseudo 1 --threshold 0.95 --distillation 1 --finetune --lr 6e-4 --student_init simclr --bn_clr --no_resume
     ```   
-   - **Stage2.**
+- **Stage3.**
     * Generate soft pseudo label.
     ```bash
     python generate_pseudo_label.py --name gta2citylabv2_stage2 --flip \
