@@ -69,7 +69,6 @@ def validate(valid_loader, logger, device, model, opt):
     if opt.class_balance:
         conf_dict, pred_cls_num = val(model.BaseNet_DP, logger, device, opt)
         class_distribution = pred_cls_num/np.sum(pred_cls_num)
-        pdb.set_trace()
         np.save(os.path.join(ori_LP, "class_distribution.npy"), class_distribution)
         #cls_thresh = kc_parameters(conf_dict, pred_cls_num, opt)
 
