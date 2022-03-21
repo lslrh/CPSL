@@ -63,22 +63,22 @@ We expect models folder to be like
     
 - **Stage1.**
     
-    *Generate soft pseudo label.
+    * Generate soft pseudo label.
     ```bash
     python generate_pseudo_label.py --name gta2citylabv2_warmup_soft --soft --resume_path  \
     ./pretrained_models/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl --no_droplast
     ```
-    *Calculate prototypes for weight initialization.
+    * Calculate prototypes for weight initialization.
     ```bash
     python calc_prototype.py --resume_path \
     ./pretrained_models/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl
     ```
-    *Calculate class distribution.
+    * Calculate class distribution.
     ```bash
     python generate_class_distribution.py --name gta2citylabv2_warmup_soft --soft \
     --resume_path  ./pretrained_models/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl --no_droplast --class_balance
     ```
-    *Calculate class distribution.
+    * Calculate class distribution.
     ```train stage1
     python train.py --name gta2citylabv2_stage1Denoise --used_save_pseudo --ema --proto_rectify\
     --path_soft Pseudo/gta2citylabv2_warmup_soft \
@@ -131,5 +131,8 @@ We expect models folder to be like
     ```  
 </details>
     
-    
+## Inference
+```bash
+python test.py --bn_clr --student_init simclr --resume ./logs/gta2citylabv2_stage3/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl
+```
 
