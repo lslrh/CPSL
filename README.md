@@ -55,8 +55,9 @@ We expect models folder to be like
   
 ## Traning
 
-- **Stage1.**
+
 <details>
+- **Stage1.**
     
     * Generate soft pseudo label.
     ```bash
@@ -82,8 +83,10 @@ We expect models folder to be like
     ```
 
    </details>
-    
+   
+<details>
 - **Stage2.**
+    
     * Generate soft pseudo label.
     ```bash
     python generate_pseudo_label.py --name gta2citylabv2_stage1Denoise --flip \
@@ -96,7 +99,11 @@ We expect models folder to be like
     --resume_path ./logs/gta2citylabv2_stage1Denoise/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl \
     --S_pseudo 1 --threshold 0.95 --distillation 1 --finetune --lr 6e-4 --student_init simclr --bn_clr --no_resume
     ```   
+</details>
+
+<details>
 - **Stage3.**
+    
     * Generate soft pseudo label.
     ```bash
     python generate_pseudo_label.py --name gta2citylabv2_stage2 --flip \
@@ -110,7 +117,7 @@ We expect models folder to be like
     --resume_path ./logs/gta2citylabv2_stage2/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl \
     --S_pseudo 1 --threshold 0.95 --distillation 1 --finetune --lr 6e-4 --student_init simclr --bn_clr --ema_bn
     ```  
-    
+</details>
     
     
 
