@@ -61,7 +61,7 @@ We expect models folder to be like
         Stage1.
     </summary>
     
-- **Stage1.**
+- **Stage1.**   ![Teaser](docs/stage1.log)
     
     * Generate soft pseudo label.
     ```bash
