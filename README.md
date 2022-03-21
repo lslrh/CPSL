@@ -1,6 +1,6 @@
 # CPSL: Class-Balanced Pixel-Level Self-Labeling for Domain Adaptive Semantic Segmentation (CVPR 2022, official Pytorch implementation)
 
-![Teaser](docs/overview.png)
+![overview](docs/overview.png)
 
 ### [Paper](https://arxiv.org/abs/2203.09744)
 
@@ -61,7 +61,7 @@ We expect models folder to be like
         Stage1.
     </summary>
     
-- **Stage1.**   ![Teaser](docs/stage1.log)
+- **Stage1.**   The log of Stage 1: ![logs](docs/stage1.log)
     
     * Generate soft pseudo label.
     ```bash
@@ -73,7 +73,7 @@ We expect models folder to be like
     python calc_prototype.py --resume_path \
     ./pretrained_models/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl
     ```
-    * Calculate class distribution.
+    * Calculate class distribution.   The class distribution is given: ![class_distribution](Pseudo/class_distribution.npy)
     ```bash
     python generate_class_distribution.py --name gta2citylabv2_warmup_soft --soft \
     --resume_path  ./pretrained_models/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl --no_droplast --class_balance
@@ -93,7 +93,7 @@ We expect models folder to be like
         Stage2.
     </summary>
     
-- **Stage2.**
+- **Stage2.**  The log of Stage 2: ![logs](docs/stage2.log)
     
     * Generate soft pseudo label.
     ```bash
@@ -114,7 +114,7 @@ We expect models folder to be like
         Stage3.
     </summary>
     
-- **Stage3.**
+- **Stage3.**   The log of Stage 3: ![logs](docs/stage3.log)
 
     * Generate soft pseudo label.
     ```bash
