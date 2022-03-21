@@ -66,7 +66,7 @@ We expect models folder to be like
     ```
     * Calculate class distribution.
     ```bash
-    python generate_hard_pseudo_label.py --name gta2citylabv2_warmup_soft --soft \
+    python generate_class_distribution.py --name gta2citylabv2_warmup_soft --soft \
     --resume_path  ./pretrained_models/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl --no_droplast --class_balance
     ```
     
