@@ -134,7 +134,7 @@ def kc_parameters(conf_dict, pred_cls_num, opt):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="config")
-    parser.add_argument('--save_path', type=str, default='./Pseudo/syn2citylabv2', help='pseudo label update thred')
+    parser.add_argument('--save_path', type=str, default='./Pseudo', help='pseudo label update thred')
     parser.add_argument('--portion', type=float, default= 0.6, help='portion of confident samples')
     parser.add_argument('--soft', action='store_true', help='save soft pseudo label')
     parser.add_argument('--flip', action='store_true')
