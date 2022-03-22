@@ -142,7 +142,7 @@ If you like our work and use the code or models for your research, please cite o
 ```
 @article{li2022class,
     title={Class-Balanced Pixel-Level Self-Labeling for Domain Adaptive Semantic Segmentation},
-    author={Li, Ruihuang and Li, Shuai and He, Chenhang and Jia, Xu and Zhang, Lei},
+    author={Li, Ruihuang and Li, Shuai and He, Chenhang and Zhang, Yabin and Jia, Xu and Zhang, Lei},
     journal={CVPR 2022},
     year={2022}
 }
