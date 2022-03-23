@@ -1,6 +1,6 @@
 # CPSL: Class-Balanced Pixel-Level Self-Labeling for Domain Adaptive Semantic Segmentation (CVPR 2022, official Pytorch implementation)
 
-![overview](docs/overview.png)
+![overview](docs/framework_.jpg)
 
 ### [Paper](https://arxiv.org/abs/2203.09744)
 
@@ -130,6 +130,8 @@ We expect models folder to be like
     --S_pseudo 1 --threshold 0.95 --distillation 1 --finetune --lr 6e-4 --student_init simclr --bn_clr --ema_bn
     ```  
 </details>
+    
+![overview](docs/seg_map.jpg)    
     
 ## Inference
 ```bash
