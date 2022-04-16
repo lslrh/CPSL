@@ -40,9 +40,9 @@ def train(opt, logger):
 
     # load category anchors
     if opt.stage == 'stage1':
-        objective_vectors = torch.load(os.path.join('pretrained_models/syn2citylabv2', 'prototypes_on_{}_from_{}.pth'.format(opt.tgt_dataset, opt.model_name)))
+        objective_vectors = torch.load(os.path.join('pretrained_models/gta2citylabv2', 'prototypes_on_{}_from_{}.pth'.format(opt.tgt_dataset, opt.model_name)))
         model.objective_vectors = torch.Tensor(objective_vectors).to(0)
-        class_distribution = np.load(os.path.join('Pseudo/syn2citylabv2', 'class_distribution.npy'))
+        class_distribution = np.load(os.path.join('Pseudo/gta2citylabv2', 'class_distribution.npy'))
         model.class_distribution = torch.Tensor(class_distribution).to(0)
         # init prototype layer
         with torch.no_grad():
