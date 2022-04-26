@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "3,4,5,6"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 import logging
 import random
 import argparse
