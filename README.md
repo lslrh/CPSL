@@ -81,7 +81,7 @@ We expect models folder to be like
     ```
     * train the model.
     ```train stage1
-    python train.py --name gta2citylabv2_stage1Denoise --used_save_pseudo --ema --proto_rectify\
+    python train.py --name gta2citylabv2_stage1Denoise --used_save_pseudo --ema --proto_rectify \
     --path_soft Pseudo/gta2citylabv2_warmup_soft \
     --resume_path ./pretrained_models/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl \
     --rce --proto_consistW 5 --SL_lambda 0.1
