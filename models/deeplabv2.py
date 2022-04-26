@@ -356,21 +356,19 @@ def Deeplab(BatchNorm, num_classes=21, freeze_bn=False, restore_from=None, initi
     model = ResNet101(Bottleneck, [3, 4, 23, 3], num_classes, BatchNorm, bn_clr=bn_clr)
     if freeze_bn:
         model.apply(freeze_bn_func)
-    # if initialization is None:
-    #     pretrain_dict = model_zoo.load_url('https://download.pytorch.org/models/resnet101-5d3b4d8f.pth')
-    # else:
-    #     pretrain_dict = torch.load(initialization)['state_dict']
-    # model_dict = {}
-    # state_dict = model.state_dict()
-    # for k, v in pretrain_dict.items():
-    #     if k in state_dict:
-    #         model_dict[k] = v
-    # state_dict.update(model_dict)
-    # model.load_state_dict(state_dict)
 
     if restore_from is not None: 
         checkpoint = torch.load(restore_from)
         model.load_state_dict(checkpoint['ResNet101']["model_state"])
         #model.load_state_dict(checkpoint['ema'])
+    else:
+        pretrain_dict = model_zoo.load_url('https://download.pytorch.org/models/resnet101-5d3b4d8f.pth')
+        model_dict = {}
+        state_dict = model.state_dict()
+        for k, v in pretrain_dict.items():
+            if k in state_dict:
+                model_dict[k] = v
+        state_dict.update(model_dict)
+        model.load_state_dict(state_dict)
     
     return model
