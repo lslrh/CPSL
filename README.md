@@ -55,7 +55,7 @@ We expect models folder to be like
  
   
 ## Traning
-
+To reproduce the performance, you need 4 GPUs with no less than 16G memory.
 
 <details>
     <summary>
