@@ -13,7 +13,7 @@ from PIL import Image
 from parser_train import parser_, relative_path_to_absolute_path
 import warnings
 warnings.filterwarnings('ignore')
-os.environ["CUDA_VISIBLE_DEVICES"] = "3,4,5,6"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 
 from tqdm import tqdm
 from data import create_dataset
