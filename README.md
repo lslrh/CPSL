@@ -120,7 +120,7 @@ To reproduce the performance, you need 4 GPUs with no less than 16G memory.
     * Generate soft pseudo label.
     ```bash
     python generate_pseudo_label.py --name gta2citylabv2_stage2 --flip \
-    --resume_path ./logs/gta2citylabv2_stage1Denoise/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl --no_droplast\
+    --resume_path ./logs/gta2citylabv2_stage2/from_gta5_to_cityscapes_on_deeplabv2_best_model.pkl --no_droplast\
     --bn_clr --student_init simclr
     ```   
     * train stage3.
