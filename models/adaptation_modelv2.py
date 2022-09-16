@@ -233,8 +233,9 @@ class CustomModel():
             threshold_arg[argmax < self.opt.train_thred] = 250
             threshold_SL = F.interpolate(threshold_arg.float(), size=(out_SL.shape[2], out_SL.shape[3])).long() 
         if cutmix<0.5:
-            source_label = F.interpolate(source_label.unsqueeze(1).float(), scale_factor=0.25).long()
+            threshold_arg = F.interpolate(threshold_arg.float(), scale_factor=4).long().squeeze(1)
             threshold_arg[:,bbx1:bbx2,bby1:bby2] = source_label[:,bbx1:bbx2,bby1:bby2]
+            threshold_arg = F.interpolate(threshold_arg.unsqueeze(1).float(), scale_factor=0.25).long()
             
         loss_CTS = cross_entropy2d(input=target_out['out'], target=threshold_arg.reshape([batch, w, h])) 
     
